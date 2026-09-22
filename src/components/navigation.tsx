@@ -9,27 +9,31 @@ import GitICON from '../assets/Icons/41-github.svg' ;
 
 import MailICON from '../assets/Icons/67-gmail.svg' ;
 
+import '../components/comp.css'
 
 // href={head_sec()}
 
 function nav_sec(){
     return(
         <>  
-            <div>
-                <p><a>Home</a></p>
-                <p>About</p>
-                <p>Experience</p>
-                <p>Projects</p>
+            <div className='inline-block px-30'>
+                <ul>
+                <li className='inline-block px-5'><a>Home</a></li>
+                <li className='inline-block px-5'><a>About</a></li>
+                <li className='inline-block px-5'><a>Experience</a></li>
+                <li className='inline-block px-5'><a>Projects</a></li>
+                </ul>
             </div>
-            <div>
-                <img src={MailICON}><a href="fesobioreofe@gmail.com"></a></img>
-                <p>Email</p>
-                <img src={LinkICON}><a href="https://www.linkedin.com/in/oreofeoluwa-fesobi-82382930b/"></a></img>
-                <p>Linkedin</p>
-                <img src={GitICON}><a href="https://github.com/Astro0re"></a></img>
-                <p>Github</p>
+            <div className='inline-block'>
+                
+                <a href="fesobioreofe@gmail.com"><img src={MailICON} alt="mail_icon" className='m-2 h-10 inline-block' /></a>
+                
+                <a href="https://www.linkedin.com/in/oreofeoluwa-fesobi-82382930b/"><img src={LinkICON} alt="link_icon" className='m-2 h-10 inline-block'/></a>
+                
+                
+                <a href="https://github.com/Astro0re"><img src={GitICON} alt="git_icon" className='m-2 h-10 inline-block'/></a>
             </div>
-            <div></div>
+
         </>
     )
 };

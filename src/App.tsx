@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-//import nav_sec from './components/navigation'
+import nav_sec from './components/navigation'
 import head_sec from './components/header'
 import info_sec from './components/info'
 import exp_sec from './components/exp'
@@ -11,6 +11,9 @@ function App() {
 
   return (
     <>
+      <div>
+        {nav_sec()}
+      </div>
 
       <div className="card">
         {head_sec()}

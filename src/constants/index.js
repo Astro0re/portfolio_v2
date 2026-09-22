@@ -1,8 +1,6 @@
-import { useState } from "react";
+export const exp_loc = ['Remedage', 'Medical ART Center', 'Babcock University'];
 
-const exp_loc = ['Remedage', 'Medical ART Center', 'Babcock University'];
-
-const exp = [{
+export const exp = [{
         name : 'Remedage' ,
         role : 'Founder CEO',
         time : '',
@@ -27,37 +25,3 @@ const exp = [{
         'Led cross-functionalteams to achieve project goals on time. Implemented quality control measures for equipments used during the experiment and ensured adherence to standards.'
         ]
     }]
-
-function exp_act(){
-    const clicked = document.querySelector('#exp_loc').nodeValue
-    console.log(clicked)
-
-   
-};
-
-//const ['SelectedExp' , 'setSelectedExp'] = useState(-1);
-
-function exp_sec(){
-    const [isClicked , setClicked] = useState(null)
-    return(
-        <>
-            <div>
-                <h2>Experince</h2>
-                <p>Here are some of the role's held along the years.</p>
-                <div>
-                    <ul>
-                        {exp_loc.map(exp_loc => <button onClick={() =>{
-                            console.log(exp_loc)
-                        }} id={exp_loc}>{exp_loc}</button>)}                        
-                    </ul>
-                </div>
-                <div id="exp_out">
-                        
-                </div>
-            </div>
-        </>
-    )
-
-};
-
-export default exp_sec
